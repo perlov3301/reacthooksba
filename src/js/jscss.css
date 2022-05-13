@@ -1,0 +1,57 @@
+fieldset {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .22rem;
+    background-color: rgba(8, 35, 35, 0.08);
+}
+.divrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10 0 5  0;
+}
+button {
+    border-radius: 0.3rem;
+    background-color: lightgray;
+    color: black;
+    margin: 0 .5rem 0 .5rem;
+    width: 8rem;
+    height: 2rem;
+    font-weight: bold;
+    border: 1px solid darkgray;
+}
+button:hover {
+    background-color: gray;
+    border: 1px solid black;
+}
+button:active {
+    background-color: gray;
+    color: white;
+    box-shadow: -5px -5px lightgray;
+    border: 2px solid gray;
+}
+.textspan {
+    font-size: 1.07rem;
+    font-weight: bold;
+}
+input {
+    margin:0.3rem 0.5rem .3rem 0.3rem ;
+    border-radius: 0.3rem;
+    padding:0.3rem 0.3rem;
+    border: 1px solid gray;
+}
+input:focus {
+    border: 3px solid blue;
+}
+input[name="textref"]::placeholder {
+    font-weight: 200;
+}
+fieldset legend {
+    background-color: navy;
+    color: white;
+    padding: 1px 0.3rem 1px 0.3rem;
+    border-radius: 0.3rem;
+}
