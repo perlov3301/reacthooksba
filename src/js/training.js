@@ -8,11 +8,11 @@ function Training() {
     const [user, setUser] = useState(null);
     const value = useMemo(() => ({user, setUser}), [user, setUser]);
     return (
-        <fieldset><legend>Training last changes</legend>
+        <fieldset><legend>useContext last changes</legend>
         
           <Router>
-            <div>
-                <nav>
+            <div >
+                <nav className='list'>
                     <ul>
                         <li>
                             <Link to="/">Home with login button</Link>

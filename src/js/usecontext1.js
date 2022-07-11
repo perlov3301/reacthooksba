@@ -11,7 +11,7 @@ export const UseContext1 = () => {
         <fieldset><legend>UseContext with BrowserRouter</legend>
           <BrowserRouter>
             <div>
-                <nav>
+                <nav className='list'>
                     <ul>
                         <li>
                             <Link to="/about1/">About1</Link>

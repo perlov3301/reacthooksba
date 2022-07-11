@@ -5,7 +5,7 @@ import { login } from "../utils/login";
 export const Index = () => {
   const {user, setUser} = useContext(UserContext);
     return (
-        <fieldset><legend>index  for router with login button</legend>
+        <fieldset><legend>index  for router with "login" and "logout" buttons</legend>
           <h2>Home</h2>
           <div style={{display: "inline-flex", alignItems: "baseline"}}>
             <span>data about user: </span>&nbsp;

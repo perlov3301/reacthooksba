@@ -12,7 +12,7 @@ export const UseContext3 = () => {
         
           <Router>
             <div>
-                <nav>
+                <nav className='list'>
                     <ul>
                         <li>
                             <Link to="/about1a/">About1 with login button</Link>

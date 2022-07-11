@@ -4,3 +4,27 @@
   padding-bottom: 22px;
 }
 
+.list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.list ul li {
+  list-style: none;
+  margin: 4px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size:18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1px 2px;
+  background-color: transparent;
+  border-radius: 0.3rem;
+  border: 1px solid rgb(12, 0 , 66);
+}
+a:hover {
+  background-color: rgb(12, 0, 66);
+  color: white;
+   }

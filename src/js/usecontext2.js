@@ -13,7 +13,7 @@ export const  UseContext2 = () => {
         <fieldset><legend>UseConext with changelable value</legend>
           <Router>
             <div>
-                <nav>
+                <nav className='list'>
                     <ul>
                         <li>
                             <Link to="/about11/">about11 with button</Link>
