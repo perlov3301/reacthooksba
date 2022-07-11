@@ -16,7 +16,7 @@ const UseEf1 =  () => {
       }, [values.password]);
     return (
         <fieldset>
-            <legend>UseEf1 form notification while rendering</legend>
+            <legend>UseEffect1 form notification while rendering</legend>
             <div className='divrow'>
               email <input name='email'    value={values.email} 
                 placeholder='email' onChange={handleChange} />
@@ -27,8 +27,8 @@ const UseEf1 =  () => {
                 onChange={handleChange} type="tel" />
             </div>
             <div className='divrow'>
-               it was present change in 'email': <input value={varemail} style={{width: '5rem'}}/>
-               it was present change in 'password' <input value={varpassword} style={{width: '5rem'}}/>
+               present change in 'email': <input value={varemail} style={{width: '5rem'}} readOnly={true}/>
+               present change in 'password' <input value={varpassword} style={{width: '5rem'}} readOnly={true}/>
 
             </div>
         </fieldset>

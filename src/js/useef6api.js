@@ -2,11 +2,11 @@ import React, { useState,useEffect } from 'react';
 import { useFetch } from './useFetch';
 
 const UseEf6 = () => {
-   const [count, setCount] = useState(0);
+   const [count, setCount] = useState(1);
    const {data, loading} = useFetch(`http://numbersapi.com/${count}/trivia`);
         // http://numbersapi.com/43/trivia
     return (
-        <fieldset><legend>useef6 rerendering catched API within custom Hook</legend>
+        <fieldset><legend>useEffect6 rerendering API within custom Hook</legend>
           <div className='divrow' >
             <span>count: {count}</span>
             <button onClick={() => setCount(c => c + 1)} >increment</button>

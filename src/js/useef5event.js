@@ -21,7 +21,7 @@ const UseEf5 = () => {
     }, []) ;
 
     return (
-        <fieldset><legend>useef5events shows mouse's screenX screenY</legend>
+        <fieldset><legend>useEffect5 events shows mouse's screenX screenY</legend>
           <div className='divrow'>
           </div>
             <div className='divrow'>

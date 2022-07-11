@@ -5,7 +5,7 @@ const UseEf7 = () => {
    const [count, setCount] = useState(() => 
        {
          let mycount = JSON.parse(localStorage.getItem("countef7"));
-         if (mycount === 'undefined') { return 0; }
+         if (mycount === undefined) { return 1; }
          else { return mycount; }
         }
      );
@@ -16,7 +16,7 @@ const UseEf7 = () => {
      localStorage.setItem("countef7", JSON.stringify(count));
    },[count]);
     return (
-        <fieldset><legend>useef7 saveState catched API within custom Hook</legend>
+        <fieldset><legend>useEffect7 saveState catched API within custom Hook</legend>
           <div className='divrow' >
             <button onClick={() => setCount(c => c - 1)} >decrement</button>
             <span>count: {count}</span>

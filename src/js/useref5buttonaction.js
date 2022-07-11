@@ -16,7 +16,7 @@ export const TextRef = () =>
 });
 
     return (
-        <fieldset> <legend>useref5 click on referenced button make focus to one and send text to another referenced input</legend>
+        <fieldset> <legend>useRef5 click on referenced button make focus to one Input and send text to another</legend>
             <div className='divrow'>
                 <input name="email" value={values.email} placeholder="email field"
                     onChange={handleChange} 

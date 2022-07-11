@@ -1,13 +1,11 @@
-import { useState, useLayoutEffect } from 'react';
+import { useState, useRef, useLayoutEffect } from 'react';
 
-export const useMeasure = (ref, deps) => {
-   // const divRef = useRef(); => whatever ref instead
+export const useMeasure = deps => {
     const [rect, setRect] = useState({});
+    const myRef = useRef();
 
     useLayoutEffect(() => {
-        const rect1 =  ref.current.getBoundingClientRect();
-        // console.log("traninghello useLayouteffect rect1: ", rect1.width, 'X', rect1.height);
-        setRect(rect1.width + 'x' + rect1.height);
-    }, [deps]);
-    return rect;
+        setRect(myRef.current.getBoundingClientRect());
+    }, deps);
+    return [rect, myRef];
 } ;

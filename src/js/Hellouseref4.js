@@ -5,8 +5,8 @@ export const HelloUseref4 = () => {
     const [count, setCount ] = useState(() => 
         {
             let initcount = JSON.parse(localStorage.getItem("countref4"));
-           if (initcount) {return initcount;}
-           else { return 0; }
+           if (initcount === undefined) {return 1;}
+           else { return initcount; }
         }
     );
     const urltrivia = `http://numbersapi.com/${count}/trivia`;

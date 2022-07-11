@@ -18,7 +18,7 @@ const UseEf2 = () => {
     // },[values.password]);
 
     return (
-        <fieldset><legend>useef2 unmount rendering notification</legend>
+        <fieldset><legend>useEffect2 unmount rendering notification</legend>
           <div className='divrow'>
             <button onClick={() => showHello ? 
               setShowHello(false): setShowHello(true)}>toggle text</button>

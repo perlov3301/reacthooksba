@@ -3,9 +3,9 @@ import { useFetch } from "./useFetch";
 
 export const HelloRef2 = () => {
     const renders = useRef(0);
-    const [count2, setCount2] = useState(() => 
-        JSON.parse(localStorage.getItem("count2"))
-    );
+    let va1 =  JSON.parse(localStorage.getItem("count2"));
+    if (va1 === undefined) { va1 = 1; }
+    const [count2, setCount2] = useState(() => va1 );
     const {data, loading} =useFetch(`http://numbersapi.com/${count2}/trivia`);
     useEffect(() => {
         localStorage.setItem("count2", JSON.stringify(count2));

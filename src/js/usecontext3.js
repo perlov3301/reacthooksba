@@ -1,32 +1,32 @@
 import React, {useState,  useMemo}  from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import { Index } from "./pages";
-import { About } from "./pages/about";
+import { About1 } from "./pages/about1a";
+import { About2 } from "./pages/about2a";
 import { UserContext } from './usercontext';
 
-function Training() {
+export const UseContext3 = () => {
     const [user, setUser] = useState(null);
     const value = useMemo(() => ({user, setUser}), [user, setUser]);
     return (
-        <fieldset><legend>Training last changes</legend>
+        <fieldset><legend>UseContext3 with data from login file</legend>
         
           <Router>
             <div>
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">Home with login button</Link>
+                            <Link to="/about1a/">About1 with login button</Link>
                         </li>
                         <li>
-                            <Link to="/about/">About</Link>
+                            <Link to="/about2a/">About2</Link>
                         </li>
                     </ul>
                 </nav>
                 <UserContext.Provider value={value}>
                         {/** each child of UserContext can get the value */}
                   <Routes>
-                        <Route exact path="/"  element={<Index/>} />
-                        <Route path="/about/" element={<About/>} />
+                        <Route path="/about1a/" element={<About1/>} />
+                        <Route path="/about2a/" element={<About2/>} />
                   </Routes>
                 </UserContext.Provider>
             </div>
@@ -36,4 +36,3 @@ function Training() {
     );
 }
 
-export default Training;

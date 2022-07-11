@@ -13,8 +13,8 @@ export const Useref3countRen = () =>
     const [count, setCount] = useState(() => 
        { 
            let initcount = JSON.parse(localStorage.getItem("count"));
-           if (initcount) {return initcount;}
-           else { return 0; }
+           if (initcount === undefined) { return 1;}
+           else { return initcount; }
        }
     );
 const {data, loading }= useFetch(`http://numbersapi.com/${count}/trivia`);
@@ -26,7 +26,7 @@ useEffect(() => {
 }, [count]);
 
 return (
-    <fieldset> <legend>Useref3countRen count ouf renderings with createRoot=2</legend>
+    <fieldset> <legend>UseRef3 count  renderings (with createRoot it is *2) </legend>
         {/* <div>{!data ? "loading..." : data} </div> */}
         <input name='mydata' placeholder='await to data'
           value={!data ? "loading" : data}

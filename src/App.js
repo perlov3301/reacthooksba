@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import UseSt1 from './js/usest1';
 import UseSt2 from './js/usest2';
 import UseSt3 from './js/usest3';
@@ -17,11 +18,23 @@ import { Useref3countRen } from './js/useref3countren';
 import { Useref4 } from './js/useref4afterunmount';
 import { TextRef } from './js/useref5buttonaction';
 import { UseLayout1Measures } from './js/uselayout1measures';
-import {Training} from './js/training';
+import { UseLayout2width } from './js/uselayout2width';
+import { UseCallback } from './js/usecallback';
+import { UseCallbackMap } from './js/usecallbackmap';
+import { UseMemo } from './js/usememo';
+import { UseReducer } from './js/usereducer';
+import { UseReducer1 } from './js/usereducer1';
+import { UseReducer2 } from './js/usereducer2';
+import { UseReducer3 } from './js/usereducer3';
+import { UseContext1 } from './js/usecontext1';
+import { UseContext2 } from './js/usecontext2';
+import { UseContext3 } from './js/usecontext3';
+
+import Training from './js/training';
 const App = () => {
   return (
     <div className="App">
-      {/* <UseSt1 />
+      <UseSt1 />
       <UseSt2 />
       <UseSt3 />
       <UseSt4 />
@@ -37,8 +50,19 @@ const App = () => {
       <UseRef2 />
       <Useref3countRen />
       <Useref4 />
-      <TextRef /> */}
+      <TextRef />
       <UseLayout1Measures />
+      <UseLayout2width />
+      <UseCallback />
+      <UseCallbackMap />
+      <UseMemo />
+      <UseReducer/>
+      <UseReducer1/>
+      <UseReducer2/>
+      <UseReducer3/>
+      <UseContext1 />
+      <UseContext2 />
+      <UseContext3 />
       <Training />
     </div>
   );

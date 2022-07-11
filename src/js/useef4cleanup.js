@@ -19,7 +19,7 @@ const UseEf4 = () => {
     }, [values.email]) ;
 
     return (
-        <fieldset><legend>useef4  cleaning old values.email & rendering notification</legend>
+        <fieldset><legend>useEffect4  cleaning old values.email & rendering notification</legend>
             <div className='divrow'>
             <input name='firstName' placeholder='first Name' value={values.firstName} 
                 onChange={handleChange} />

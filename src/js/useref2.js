@@ -9,7 +9,7 @@ export const UseRef2 = () => {
     const [showHello, setShowHello] = useState(true);
 
     return (
-        <fieldset><legend>useref2 Storing reference to a Component plus useFetch</legend>
+        <fieldset><legend>useRef2 storing reference to a Component plus useFetch</legend>
           <div className='divrow'>
             <button onClick={() => {
                 inputRef.current.focus();
